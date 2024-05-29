@@ -1,0 +1,253 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: "Press Start 2P";
+}
+
+
+header{
+    display: flex;
+    background-color: #5D04D9;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 5px;
+    border-bottom: 5px #e5e5e5 solid;
+}
+
+.hearts{
+    height: 50px;
+}
+
+header h1{
+    font-size: 24px;
+    color: white;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.agregar-productos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.agregar-productos h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 24px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input{
+    height: 39px;
+    margin-top: 10px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20.8px;
+    border: 3px #03318C solid;
+    color:#03318C;
+    border-radius: 30px;
+    padding: 5px;
+    outline: none;
+    align-items: center;
+}
+
+input:invalid {
+    border-color: rgb(193, 217, 244);
+    background-color: rgb(250, 246, 246);
+}
+  
+input:focus:invalid {
+    outline: none;
+}
+
+.error {
+    font-size: 12px;
+    color:black;
+    border-radius: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    height: 20px;
+}
+  
+.error.active {
+    padding: 0.4em;
+}
+
+.form-container span {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: red;
+    padding: 10px;
+}
+
+.button-container{
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 13px;
+}
+
+.button-submit{
+    padding: 10px 20px;
+    border: 3px #03318C solid;
+    border-radius: 15px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    cursor: pointer;
+    color:white;
+    background-color: #03318C;
+}
+
+.button-clear{
+    padding: 10px 20px;
+    border: 3px #03318C solid;
+    border-radius: 15px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    cursor: pointer;
+    color:#03318C;
+    background-color: white;
+}
+
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 0;
+}
+
+.productos h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.products-container{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+.products-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.card {
+    background-color: #864bd9;
+    color: #ffffff;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+
+.card-container--info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container--info p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+
+.img-container {
+    height: 210px;
+    width: 90%;
+    max-width: 200px;
+    border-radius: 5px 5px 0px 0px;
+    margin: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+}
+
+.card_img {
+    height: 200px;
+    width: 180px;
+}
+
+.card-container--value {
+    display: flex;
+    margin: 8px 0px;
+    align-items: center;
+    gap: 100px
+}
+
+.card-container--value p {
+    margin: 0px;
+    color: white;
+    text-wrap: balance;
+}
+
+.delete-button img {
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+    width: 24px;
+    height: 24px;
+    stroke-width: 1.5px;
+}
+
+footer {
+    display: flex;
+    background-color: #5D04D9;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+    border-top: 5px #e5e5e5 solid;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+}
+
+footer div h2{
+    font-size: 24px;
+    color:white;
+}
+
+footer h3 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    font-weight: 300;
+    color:white;
+}
+
+@media (min-width: 1024px){
+    main {
+        flex-direction: row-reverse;
+    }
+
+    .agregar-productos{
+        width: 40%;
+        padding: 70px;
+    }
+
+    .productos{
+        width: 60%;
+    }
+}
+    

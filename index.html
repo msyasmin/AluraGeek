@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>AluraGeek</title>
+</head>
+
+<body>
+    <header>
+        <img class="hearts" src="assets/hearts.png">
+        <h1>AluraGeek</h1>
+    </header>
+
+    <main>
+        <section class="agregar-productos">
+            <h1>AGREGAR PRODUCTO:</h1>
+            <form data-form class="form-container">
+                <input data-name placeholder="Nombre..." type="text" name="name" minlength="1" required>
+                <span></span>
+                <input data-price placeholder="Precio..." type="number" name="price" min="1" required>
+                <span></span>
+                <input data-image placeholder="Imagen..." type="text" name="image" minlength="1" required>
+                <span></span>
+
+                <div class="button-container">
+                    <button type="submit" class="button-submit" id="button">Enviar</button>
+                    <button type="reset" class="button-clear" id="button">Limpiar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="productos">
+            <h1>MIS PRODUCTOS</h1>
+            <div data-product class="products-container">
+
+            </div>    
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img class="hearts" src="assets/hearts.png">
+            <h2>AluraGeek</h2>
+        </div>
+        <h3>Desarrollado por Yasmín</h3>
+        <h3>ALURA LATAM - 2024</h3>
+    </footer>
+    <script type="module" src="js/controllers/main.js"></script>
+    <script src="js/validacion.js"></script>
+</body>
+</html>
