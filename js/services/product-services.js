@@ -1,12 +1,12 @@
 const productList = () => {
-    return fetch("http://localhost:3000/products")
+    return fetch("https://fake-api-alura-nu.vercel.app/product")
             .then((res) => res.json())
             .catch((err) => console.log(err))
 
 }
 
 const createProducts = (name, price, image) => {
-    return fetch("http://localhost:3000/products", {
+    return fetch("https://fake-api-alura-nu.vercel.app/product", {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
@@ -22,7 +22,7 @@ const createProducts = (name, price, image) => {
 };
 
 const deleteProducts = async (id) => {
-  return fetch(`${"http://localhost:3000/products"}/${id}`, {
+  return fetch(`${"https://fake-api-alura-nu.vercel.app/product"}/${id}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
